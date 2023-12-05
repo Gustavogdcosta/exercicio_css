@@ -4,6 +4,17 @@
     padding: 0;
 }
 
-header li {
-    display: inline;
+
+header li{
+    display: inline-flex;
+}
+
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
 }
