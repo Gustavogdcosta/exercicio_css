@@ -4,17 +4,125 @@
     padding: 0;
 }
 
-
-header li{
-    display: inline-flex;
+body > header {
+    background-color: #2f3640;
 }
 
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f5f6fa;
+    padding: 16px 0;
+}
+
+header .container nav li{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header .container nav li:hover {
+    text-decoration: underline;
+}
+
+header .container a {
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+header li{
+    display: inline;
+}
 
 .container {
     width: 1366px;
     margin: 0 auto;
 }
 
-.articles {
+section{
+    padding: 16px 0;
+}
+
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+section .articles {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+article p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section .articles h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    display: inline-block;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles article a:hover{ 
+    text-decoration: underline;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+#economy {
+    background-color: #f8f59f6e;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: rgba(0, 255, 255, 0.3);
+}
+
+#entertainment .articles article a{
+    background-color: rgb(16, 111, 143);
+}
+
+#tecnology {
+    background-color: rgba(219, 96, 104, 0.3);
+}
+
+#tecnology .articles article a{
+    background-color: rgb(226, 63, 63);
 }
